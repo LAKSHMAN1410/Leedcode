@@ -4,7 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        n=len(nums)
         d=Counter(nums)
         for k,v in d.items():
-            if v>len(nums)/2:
+            if v>n/2:
                 return k
